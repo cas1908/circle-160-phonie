@@ -21,9 +21,7 @@ function startApp() {
     scanThrough.classList.add("hide-logo");
   }
 
-  // const Logos = [
-  //     <svg width="61" height="61" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M.938.889h58.8v58.798H.938V.889Z" fill="#FFC325"/><path d="M1.828 30.288c0-6.14 12.763-11.12 28.506-11.12 15.744 0 28.506 4.98 28.506 11.12 0 6.141-12.762 11.119-28.506 11.119S1.828 36.429 1.828 30.288Z" fill="#006891"/><path d="M1.828 30.288c0-6.14 12.763-11.12 28.506-11.12 15.744 0 28.506 4.98 28.506 11.12 0 6.141-12.762 11.119-28.506 11.119S1.828 36.429 1.828 30.288Z" stroke="#006891" stroke-width="1.405" stroke-miterlimit="3.864"/><path fill-rule="evenodd" clip-rule="evenodd" d="m12.277 35.693 2.959-11.044h4.67v6.495h.03l3.168-6.495h4.744l-2.959 11.044h-3.083l1.896-7.084h-.03l-3.766 7.084h-2.47v-7.084h-.05l-1.896 7.084h-3.213Z" fill="#fff"/><path fill-rule="evenodd" clip-rule="evenodd" d="m28.684 35.911.42-1.57h3.403l-.42 1.57h-3.403Z" fill="#EE4034"/><path fill-rule="evenodd" clip-rule="evenodd" d="m29.22 33.9 1.721-6.42h-3.093l.759-2.831h9.59l-.759 2.83h-3.094l-1.72 6.42-3.404.002Z" fill="#FFC325"/><path fill-rule="evenodd" clip-rule="evenodd" d="m35.996 35.693 2.957-11.044h3.342l1.508 5.91h.03l1.582-5.91h3.09l-2.958 11.044h-3.18L40.73 29.66h-.03l-1.614 6.032h-3.09Z" fill="#fff"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(.336 .288)" d="M0 0h60v60H0z"/></clipPath></defs></svg>
-  // ]
+  
 
   // Array of Logos for suggestions
   // Index 0 is MTN // Index 1 is GLO // Index 2 is airtel
@@ -34,34 +32,7 @@ function startApp() {
     '<svg width="60" height="60" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.601 53.653c.77 0 1.332.163 1.688.49.355.325.533.832.533 1.52v3.688h-1.154v-3.532c0-.777-.436-1.166-1.308-1.166-.377-.003-.747.1-1.067.3.056.232.082.471.078.71v3.688h-1.155v-3.532c0-.777-.436-1.166-1.308-1.166-.397 0-.792.072-1.165.211v4.487H13.59v-5.12c.382-.19.787-.331 1.204-.42.445-.104.9-.158 1.357-.16.72 0 1.255.14 1.605.42a4.27 4.27 0 0 1 1.846-.418Zm6.176 5.867c-.88 0-1.541-.252-1.984-.755-.443-.504-.664-1.237-.665-2.2 0-1.947.88-2.92 2.64-2.92.887 0 1.554.25 2 .75.447.499.671 1.223.671 2.17 0 .948-.23 1.677-.692 2.188-.462.511-1.118.767-1.97.767Zm-.011-.989c1.011 0 1.517-.655 1.517-1.965 0-.652-.12-1.139-.36-1.46-.24-.323-.625-.484-1.155-.484-.535 0-.917.164-1.148.494-.231.33-.346.813-.346 1.45 0 .636.119 1.123.357 1.46.238.337.616.505 1.135.503v.002Zm6.527-4.875c.821 0 1.444.248 1.869.744.424.496.637 1.198.639 2.107 0 1.096-.255 1.872-.764 2.327-.51.455-1.157.684-1.942.686-1.575 0-2.363-.422-2.363-1.266v-6.711h1.143V54c.23-.11.472-.194.72-.25.229-.059.463-.091.698-.097v.003Zm-.286 4.853c.6 0 1.02-.174 1.26-.522.24-.348.36-.826.36-1.433 0-.621-.126-1.095-.38-1.421-.252-.326-.627-.489-1.125-.489-.217.002-.433.03-.644.083-.21.051-.412.132-.6.24v3c-.002.36.375.54 1.129.54v.002Zm4.098-6.675h1.231v1.055h-1.231v-1.055Zm.033 1.977h1.154l.011 5.542h-1.165v-5.542Zm2.79 5.542v-7.688h1.144v7.686l-1.144.002Zm5.01-5.713c.858 0 1.487.28 1.886.84.399.56.595 1.343.588 2.349H42.54c.037.548.197.965.48 1.25.282.285.684.427 1.203.427.623 0 1.235-.156 1.781-.455v1.088c-.572.254-1.226.381-1.964.381-.828 0-1.479-.254-1.952-.76-.472-.508-.709-1.228-.708-2.16 0-.956.223-1.687.67-2.194.447-.507 1.076-.762 1.888-.766Zm-.032.96c-.389 0-.693.104-.912.311-.22.208-.363.56-.43 1.055h2.672c-.052-.474-.184-.82-.396-1.038-.213-.218-.524-.327-.934-.328ZM32.88 8.908c-1.274-.315-2.254-.473-2.94-.473-5.124 0-9.278 4.14-9.278 9.245 0 5.106 4.156 9.246 9.278 9.246 5.121 0 9.277-4.14 9.277-9.246 0-.746-.09-1.489-.267-2.213l7.376-1.987a16.745 16.745 0 0 1-2.2 13.455L31.915 49.578H20.599l8.04-14.82c.044-.082-.085-.262-.193-.271-8.591-.78-15.321-7.98-15.321-16.746 0-9.287 7.554-16.815 16.873-16.815a16.909 16.909 0 0 1 5.032.76l-2.15 7.222Z" fill="#006E53"/><path d="M29.886 22.765a5.085 5.085 0 1 0 0-10.17 5.085 5.085 0 0 0 0 10.17Z" fill="#D6E806"/><path d="M45.023 11.786a16.394 16.394 0 0 0-8.668-9.014m2.31 11.441a9.22 9.22 0 0 0-4.74-4.97l4.74 4.97Zm3.237-1.387a13.11 13.11 0 0 0-6.587-6.934l6.587 6.934Z" stroke="#D6E806" stroke-width="2" stroke-linecap="round"/></svg>',
   ];
 
-  // SUGGESTION
-  // let input = document.getElementById("phone-number");
-
-  // input.addEventListener("keyup", (event) => {
-  //   const mtnNumbers = /2340803|2340806|2340703|2340706|2340810|2340813|2340814|2340816|2340903|2340906|2340916/;
-  //   const gloNumbers = /2340805|2340807|2340811|2340705|2340815|2340905/;
-  //   const airtelNumbers = /2340802|2340808|2340812|2340701|2340708|2340902|2340907|2340901/;
-  //   const nineMobibleNumbers = /2340809|2340817|2340818|2340908|2340909/;
-
-  //   // if (event.key == "Backspace") {
-  //   //     span.innerText = inputValue
-  //   //     span0.innerText = inputValue
-  //   //     span1.innerText = inputValue
-  //   //     span2.innerText = inputValue
-  //   //     input.style.borderColor = 'yellowgreen)'
-  //   //     label.style.color = 'yellowgreen'
-  //   //     label.innerText = "Invalid number, try again"
-  //   // }
-
-  //     suggestion.innerHTML += input.value;
-  // });
-
-  // console.log(input);
-
-  // if(phoneNumber == ""){
-  //     label.innerHTML = "Enter phone number"
-  //     label.style.color = "#9DB7F8"
-  // }
+ 
 
   revealButton.addEventListener("click", () => {
     console.log(suggestion);
@@ -79,18 +50,13 @@ function startApp() {
       phoneStarts = `234${phoneNumber.substring(0, 4)}`;
     }
 
-    // let phoneStarts = `+234 + $phoneNumber.substring(0,4)`
-
-    // let pattern = /((\+234?)|0)?[ -]?(?<network>\d{4})[ -]?(\d{3})[ -]?(\d{4})/;
 
     const mtnNumbers = /2340803|2340806|2340703|2340706|2340810|2340813|2340814|2340816|2340903|2340906|2340916/;
     const gloNumbers = /2340805|2340807|2340811|2340705|2340815|2340905/;
     const airtelNumbers = /2340802|2340808|2340812|2340701|2340708|2340902|2340907|2340901/;
     const nineMobibleNumbers = /2340809|2340817|2340818|2340908|2340909/;
 
-    // const found = phoneStarts.match(mtnNumbers);
 
-    // console.log(found);
     if (phoneNumber.toString().length < 11) {
       for (const scanThrough of brandLogos) {
         scanThrough.classList.add('hide-logo')
@@ -101,7 +67,6 @@ function startApp() {
     }
 
     else if (phoneStarts.match(mtnNumbers) && !(phoneNumber.toString().length < 11)) {
-      // console.log("I am an mtn number")
       placeholder.classList.add('hide-logo')
       for (const scanThrough of brandLogos) {
         scanThrough.classList.add('hide-logo')
@@ -138,35 +103,7 @@ function startApp() {
       nineMobileLogo.classList.remove('hide-logo')
     }
 
-    // if(mtnLogo.id == "MTN"){
-    //     console.log("I DEY WORK")
-    // }
 
-    // for(const objectScan in carrierPrefixes){
-
-    // let carrierName = carrierPrefixes[objectScan].includes(phoneNumber.substring(0, 4))
-    // let carrierName = carrierPrefixes[objectScan]
-
-    // console.log(objectScan[0])
-    // console.log(carrierPrefixes[objectScan])
-    // console.log(carrierName);
-    // if(carrierName.includes(phoneNumber.substring(0, 4))){
-    //     console.log(phoneNumber.substring(0, 4));
-    //     if(mtnLogo.id == "MTN" && objectScan == "MTN"){
-    //         console.log("HMMMMM")
-    //     }
-    // }
-
-    // if the fisrt 4 digits match a particular sample data in the object.. it should append a particular html tag
-    // step one: get user input
-    // step two: compare the first four digit in the input with the sample data in the object
-
-    // if(phoneNumber.substring(0, 4) === carrierName){
-    //     console.log("Hello")
-    // }else{
-    //     console.log("not working")
-    // }
-    // }
   });
 
   let phoneNumber = document.getElementById("phone-number");
@@ -180,58 +117,7 @@ function startApp() {
     placeholder.classList.remove("hide-logo");
   });
 
-  // function getFirstFourDigit(){
-  //     let phoneNumber = number.value;
-  //     console.log(phoneNumber.substring(0, 4))
-
-  // }
-
-  // getFirstFourDigit()
-
-  // const carrierPrefixes = {
-  //     MTN: [
-  //         "0803",
-  //         "0806",
-  //         "0703",
-  //         "0706",
-  //         "0810",
-  //         "0813",
-  //         "0814",
-  //         "0816",
-  //         "0903",
-  //         "0906",
-  //         "0916",
-  //     ],
-
-  //     GLO: [
-  //         "0805",
-  //         "0807",
-  //         "0811",
-  //         "0705",
-  //         "0815",
-  //         "0905"],
-
-  //     AIRTEL: [
-  //         "0802",
-  //         "0808",
-  //         "0812",
-  //         "0701",
-  //         "0708",
-  //         "0902",
-  //         "0907",
-  //         "0901"],
-
-  //     NINEMOBILE: [
-  //         "0809",
-  //         "0817",
-  //         "0818",
-  //         "0908",
-  //         "0909"],
-  //     };
-
-  // function get
-  // document.body.style.background = "red"
-  // revealButton.addEventListener(onclick)
+ 
 
   const header = document.querySelector('h2');
   if (header) {
