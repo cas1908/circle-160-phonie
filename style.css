@@ -109,6 +109,9 @@ body {
 }
 .main-content-container .form-wrap .logo-container .carrier-logo {
   margin: 0 auto;
+  overflow: auto;
+  width: 75% !important;
+  height: 75% !important;
 }
 .main-content-container .form-wrap .logo-container .hide-logo {
   display: none;
