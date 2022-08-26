@@ -181,18 +181,17 @@ body {
 
 /* Mobile Mode */
 @media screen and (max-width:30em) {
-  * {
-    border: 1px solid red;
-  }
+
   .main-content-container {
     width: 95%;
     margin: 0 auto;
   }
   .main-content-container .form-wrap form.form {
-    min-width: 7.7875rem;
-    min-height: 2.5rem;
+    min-width: 10.7875rem;
+    width: 70%;
+    min-height: 2rem;
     position: relative;
-    font-size: 1em;
+    /* font-size: 0rem; */
   }
   .main-content-container .form-wrap form.form input.input {
     width: 100%;
@@ -200,17 +199,17 @@ body {
     padding-left: 20px;
   }
   .main-content-container .form-wrap form.form .label-name span.label-text {
-    font-size: 1rem;
-    top: 15px;
-    left: 0;
+    font-size: 0.8em;
+    top: 40px;
+    left: 10px;
   }
   .main-content-container button.button {
     width: 300px;
-    height: 80px;
+    height: 90px;
     font-size: 1.2em;
   }
   .main-content-container .form-wrap .logo-container {
-    width: 120px;
+    width: 100px;
     margin-left: 1rem;
     border-radius: 20px;
 }
