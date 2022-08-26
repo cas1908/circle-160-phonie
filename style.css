@@ -13,7 +13,7 @@ body {
 .main-content-container {
   display: flex;
   flex-direction: column;
-  min-width: 100vh;
+  width: 100%;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
@@ -83,13 +83,13 @@ body {
 .main-content-container .form-wrap form.form input.input:focus + .label-name .label-text,
 .main-content-container .form-wrap form.form input.input:valid + .label-name .label-text {
   transform: translateY(-42px);
-  font-size: 1.375rem !important;
+  font-size: 1.2rem !important;
   color: #5D87F4;
 }
 .main-content-container .form-wrap form.form::before {
   content: "";
   height: 300px;
-  width: 300px;
+  width: 200px;
   background-color: red;
 }
 .main-content-container .form-wrap .logo-container {
@@ -115,7 +115,7 @@ body {
 }
 .main-content-container button.button {
   margin-top: 6.5rem;
-  width: 520px;
+  width: 500px;
   height: 124px;
   justify-content: center;
   display: flex;
@@ -141,4 +141,83 @@ body {
   padding-top: 0.4em;
 }
 
+/* Media query starts here */
+
+/* Tablet mode */
+@media screen and (max-width: 50em) {
+
+  .main-content-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .main-content-container .brand-details h5.brand-tagline {
+    font-size: 1.7rem;
+  }
+  .main-content-container .form-wrap form.form {
+    min-width: 26.7875rem;
+    min-height: 7rem;
+    position: relative;
+    font-size: 1.5em;
+  }
+  .main-content-container button.button {
+    width: 350px;
+    height: 80px;
+    font-size: 1.2em;
+  }
+  .main-content-container .form-wrap .logo-container {
+    width: 140px;
+  }
+  .main-content-container .form-wrap form.form input.input {
+    width: 100%;
+    font-size: 1.5em;
+  }
+  .main-content-container .form-wrap form.form .label-name span.label-text {
+    font-size: 2rem;
+    top: 45px;
+    left: 40px;
+  }
+
+}
+
+/* Mobile Mode */
+@media screen and (max-width:30em) {
+  * {
+    border: 1px solid red;
+  }
+  .main-content-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .main-content-container .form-wrap form.form {
+    min-width: 7.7875rem;
+    min-height: 2.5rem;
+    position: relative;
+    font-size: 1em;
+  }
+  .main-content-container .form-wrap form.form input.input {
+    width: 100%;
+    font-size: 1em;
+    padding-left: 20px;
+  }
+  .main-content-container .form-wrap form.form .label-name span.label-text {
+    font-size: 1rem;
+    top: 15px;
+    left: 0;
+  }
+  .main-content-container button.button {
+    width: 300px;
+    height: 80px;
+    font-size: 1.2em;
+  }
+  .main-content-container .form-wrap .logo-container {
+    width: 120px;
+    margin-left: 1rem;
+    border-radius: 20px;
+}
+  .carrier-logo{
+    height: 100px;
+    width: 100%;
+    object-fit: contain;
+  }
+}
 /*# sourceMappingURL=style.css.map */
